@@ -1,5 +1,8 @@
-package com.hotel.domain.model.entity;
+package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
 
+import jakarta.persistence.*;
+
+@Entity
 public class Room {
     private String roomId;
     private int roomNumber;
@@ -8,5 +11,4 @@ public class Room {
     private boolean availability;
     private String roomTypeId;
     private String statusId;
-
 }

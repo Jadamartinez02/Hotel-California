@@ -1,4 +1,4 @@
-package com.hotel.hotelcalifornia;
+package com.hotelcalifornia.hotelcalifornia;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

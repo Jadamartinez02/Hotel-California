@@ -1,8 +1,8 @@
 package com.hotelcalifornia.hotelcalifornia.adapters.dto;
 
-import jakarta.persistence.Column;
 
 public class RoomDto {
+    
     private String id;
     private int number;
     private float priceNight;

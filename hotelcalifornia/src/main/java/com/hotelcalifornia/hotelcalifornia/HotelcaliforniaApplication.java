@@ -8,6 +8,7 @@ public class HotelcaliforniaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HotelcaliforniaApplication.class, args);
+		
 	}
 
 }

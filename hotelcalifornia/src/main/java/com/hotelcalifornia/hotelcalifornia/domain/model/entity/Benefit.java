@@ -14,7 +14,9 @@ public class Benefit {
     @Column (nullable = false)
     private Float price;
     
+
     public Benefit() {
     }
+
 }
 

@@ -13,6 +13,14 @@ public class Bed {
         
     public Bed() {
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getType() {
+        return type;
+    }
     
  
 }

@@ -1,7 +1,7 @@
 package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
 
 import jakarta.persistence.*;
-import scala.collection.immutable.List;
+import java.util.List;
 
 @Entity
 public class StatusRoom {

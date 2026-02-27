@@ -3,7 +3,7 @@ package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
 import java.time.LocalDate;
 
 import jakarta.persistence.*;
-import scala.collection.immutable.List;
+import java.util.List;
 
 @Entity
 public class Employee extends User {
@@ -23,7 +23,6 @@ public class Employee extends User {
     @Column(nullable = false)
     private String contractType;
 
-    
     public Employee() {
     }
 
@@ -31,7 +30,7 @@ public class Employee extends User {
             String document, String phoneNumber, LocalDate birthDate, List<Reservation> reservations, Role role,
             String employeeCode, String position, LocalDate hireDate, Long salary, String department, boolean isActive,
             String contractType) {
-        super(id, roleId, email, password, firstName, lastName, document, phoneNumber, birthDate, reservations, role);
+        super(id, email, password, firstName, lastName, document, phoneNumber, birthDate, reservations, role);
         this.employeeCode = employeeCode;
         this.position = position;
         this.hireDate = hireDate;
@@ -97,7 +96,4 @@ public class Employee extends User {
         this.contractType = contractType;
     }
 
-    
-
-    
 }

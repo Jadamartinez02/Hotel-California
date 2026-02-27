@@ -3,7 +3,7 @@ package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
 import java.time.LocalDate;
 
 import jakarta.persistence.*;
-import scala.collection.immutable.List;
+import java.util.List;
 
 @Entity
 public class User {
@@ -13,8 +13,6 @@ public class User {
     @Column(columnDefinition = "CHAR(36)")
     private String id;
 
-    @Column(nullable = false, columnDefinition = "CHAR(36)")
-    private String roleId;
     @Column(nullable = false)
     private String email;
     @Column(nullable = false)
@@ -33,12 +31,13 @@ public class User {
     @ManyToOne
     @JoinColumn(name = "role_id", nullable = false)
     private Role role;
+
     public User() {
     }
-    public User(String id, String roleId, String email, String password, String firstName, String lastName,
+
+    public User(String id, String email, String password, String firstName, String lastName,
             String document, String phoneNumber, LocalDate birthDate, List<Reservation> reservations, Role role) {
         this.id = id;
-        this.roleId = roleId;
         this.email = email;
         this.password = password;
         this.firstName = firstName;
@@ -49,74 +48,85 @@ public class User {
         this.reservations = reservations;
         this.role = role;
     }
+
     public String getId() {
         return id;
     }
+
     public void setId(String id) {
         this.id = id;
     }
-    public String getRoleId() {
-        return roleId;
-    }
-    public void setRoleId(String roleId) {
-        this.roleId = roleId;
-    }
+
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
+
     public String getPassword() {
         return password;
     }
+
     public void setPassword(String password) {
         this.password = password;
     }
+
     public String getFirstName() {
         return firstName;
     }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
     public String getLastName() {
         return lastName;
     }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
     public String getDocument() {
         return document;
     }
+
     public void setDocument(String document) {
         this.document = document;
     }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
     public LocalDate getBirthDate() {
         return birthDate;
     }
+
     public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
+
     public List<Reservation> getReservations() {
         return reservations;
     }
+
     public void setReservations(List<Reservation> reservations) {
         this.reservations = reservations;
     }
+
     public Role getRole() {
         return role;
     }
+
     public void setRole(Role role) {
         this.role = role;
     }
-    
-
-    
 
 }

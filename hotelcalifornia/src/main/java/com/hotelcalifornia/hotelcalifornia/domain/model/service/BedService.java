@@ -24,7 +24,7 @@ public class BedService {
         return this.repositoryBeed.save(data);
     }
 
-    public List<Bed> serBed(){
+    public List<Bed> serarchBeds(){
         return this.repositoryBeed.findAll();
     }
 
@@ -43,7 +43,17 @@ public class BedService {
         }
         this.repositoryBeed.deleteById(id);
     }
+    public Bed updateTypeBed(Integer id, Bed data){
+        Optional<Bed> searchByIdOptional  = repositoryBeed.findById(id);
+        if(!searchByIdOptional.isEmpty()){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, Messege404.NOT_FOUND.getText());
+        }
+        Bed bedToUpdate = searchByIdOptional.get();
+        if(data.getType() != null){
+            bedToUpdate.setType(data.getType());
+        }
+        return this.repositoryBeed.save(bedToUpdate);
+    }
 
-    
 
 }

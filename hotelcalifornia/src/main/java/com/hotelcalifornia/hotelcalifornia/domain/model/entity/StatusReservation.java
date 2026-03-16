@@ -1,9 +1,12 @@
 package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
 
+import java.util.List;
+
 import jakarta.persistence.*;
-import scala.collection.immutable.List;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "status_reservations")
 public class StatusReservation {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

@@ -1,11 +1,20 @@
-package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
+package com.login.login.domain.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
-import jakarta.persistence.*;
-import scala.collection.immutable.List;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "app_user")
 public class User {
 
     @Id
@@ -13,8 +22,6 @@ public class User {
     @Column(columnDefinition = "CHAR(36)")
     private String id;
 
-    @Column(nullable = false, columnDefinition = "CHAR(36)")
-    private String roleId;
     @Column(nullable = false)
     private String email;
     @Column(nullable = false)
@@ -33,12 +40,12 @@ public class User {
     @ManyToOne
     @JoinColumn(name = "role_id", nullable = false)
     private Role role;
+    
     public User() {
     }
-    public User(String id, String roleId, String email, String password, String firstName, String lastName,
+    public User(String id, String email, String password, String firstName, String lastName,
             String document, String phoneNumber, LocalDate birthDate, List<Reservation> reservations, Role role) {
         this.id = id;
-        this.roleId = roleId;
         this.email = email;
         this.password = password;
         this.firstName = firstName;
@@ -54,12 +61,6 @@ public class User {
     }
     public void setId(String id) {
         this.id = id;
-    }
-    public String getRoleId() {
-        return roleId;
-    }
-    public void setRoleId(String roleId) {
-        this.roleId = roleId;
     }
     public String getEmail() {
         return email;

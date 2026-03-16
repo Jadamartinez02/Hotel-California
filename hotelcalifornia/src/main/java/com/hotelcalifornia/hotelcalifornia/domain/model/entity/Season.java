@@ -1,11 +1,13 @@
 package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import jakarta.persistence.*;
-import scala.collection.immutable.List;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "seasons")
 public class Season {
 
     @Id

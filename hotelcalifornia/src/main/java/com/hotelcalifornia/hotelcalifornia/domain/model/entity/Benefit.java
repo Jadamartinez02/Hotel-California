@@ -1,8 +1,10 @@
 package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
 
 import jakarta.persistence.*;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "benefits")
 public class Benefit {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -19,4 +21,3 @@ public class Benefit {
     }
 
 }
-

@@ -1,9 +1,12 @@
 package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
 
+import java.util.List;
+
 import jakarta.persistence.*;
-import scala.collection.immutable.List;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "hotel_packages")
 public class HotelPackage {
 
     @Id
@@ -16,7 +19,7 @@ public class HotelPackage {
     @Column(nullable = false)
     private Float priceMultiplier;
 
-    @OneToMany(mappedBy = "package")
+    @OneToMany(mappedBy = "hotelPackage")
     private List<Reservation> reservations;
 
     public HotelPackage() {

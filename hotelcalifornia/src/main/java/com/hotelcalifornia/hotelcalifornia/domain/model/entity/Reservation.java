@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "reservations")
 public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -14,7 +15,7 @@ public class Reservation {
     @Column(nullable = false, columnDefinition = "CHAR(36)")
     private String seasonId;
     @Column(nullable = false, columnDefinition = "CHAR(36)")
-    private String StatusReservationId;
+    private String statusReservationId;
     @Column(nullable = false, columnDefinition = "CHAR(36)")
     private String packageId;
     @Column(nullable = false, columnDefinition = "CHAR(36)")
@@ -26,9 +27,6 @@ public class Reservation {
     @Column(nullable = false)
     private LocalDate checkout;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
     @ManyToOne
     @JoinColumn(name = "room_id", nullable = false)
     private Room room;
@@ -46,17 +44,16 @@ public class Reservation {
     }
 
     public Reservation(String id, String seasonId, String statusReservationId, String packageId, String roomId,
-            String userId, LocalDate checkIn, LocalDate checkout, User user, Room room, HotelPackage hotelPackage,
+            String userId, LocalDate checkIn, LocalDate checkout, Room room, HotelPackage hotelPackage,
             Season season, StatusReservation statusReservation) {
         this.id = id;
         this.seasonId = seasonId;
-        StatusReservationId = statusReservationId;
+        this.statusReservationId = statusReservationId;
         this.packageId = packageId;
         this.roomId = roomId;
         this.userId = userId;
         this.checkIn = checkIn;
         this.checkout = checkout;
-        this.user = user;
         this.room = room;
         this.hotelPackage = hotelPackage;
         this.season = season;
@@ -80,11 +77,11 @@ public class Reservation {
     }
 
     public String getStatusReservationId() {
-        return StatusReservationId;
+        return statusReservationId;
     }
 
     public void setStatusReservationId(String statusReservationId) {
-        StatusReservationId = statusReservationId;
+        this.statusReservationId = statusReservationId;
     }
 
     public String getPackageId() {
@@ -125,14 +122,6 @@ public class Reservation {
 
     public void setCheckout(LocalDate checkout) {
         this.checkout = checkout;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public Room getRoom() {

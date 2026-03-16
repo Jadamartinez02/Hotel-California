@@ -1,4 +1,4 @@
-package com.hotelcalifornia.hotelcalifornia.adapters.dto;
+package com.login.login.adapters.dto;
 
 import java.time.LocalDate;
 

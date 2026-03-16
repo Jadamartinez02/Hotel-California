@@ -1,9 +1,11 @@
-package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
+package com.login.login.domain.entity;
+
+import java.util.List;
 
 import jakarta.persistence.*;
-import scala.collection.immutable.List;
 
 @Entity
+@Table(name = "roles")
 public class Role {
 
     @Id
@@ -25,11 +27,19 @@ public class Role {
     @OneToMany(mappedBy = "role")
     private List<User> users;
 
+    @ManyToMany
+    @JoinTable(
+        name = "role_permission",
+        joinColumns = @JoinColumn(name = "role_id"),
+        inverseJoinColumns = @JoinColumn(name = "permission_id")
+    )
+    private List<Permission> permissions;
+
     public Role() {
     }
 
     public Role(String id, String name, Boolean canEditRoom, Boolean canViewRoom, Boolean canPostOffers,
-            Boolean canEditPackage, List<User> users) {
+            Boolean canEditPackage, List<User> users, List<Permission> permissions) {
         this.id = id;
         this.name = name;
         this.canEditRoom = canEditRoom;
@@ -37,6 +47,7 @@ public class Role {
         this.canPostOffers = canPostOffers;
         this.canEditPackage = canEditPackage;
         this.users = users;
+        this.permissions = permissions;
     }
 
     public String getId() {
@@ -95,5 +106,11 @@ public class Role {
         this.users = users;
     }
 
-    
+    public List<Permission> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(List<Permission> permissions) {
+        this.permissions = permissions;
+    }
 }

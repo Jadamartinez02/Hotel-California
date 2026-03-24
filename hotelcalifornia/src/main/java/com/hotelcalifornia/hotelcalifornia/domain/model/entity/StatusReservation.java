@@ -3,7 +3,6 @@ package com.hotelcalifornia.hotelcalifornia.domain.model.entity;
 import java.util.List;
 
 import jakarta.persistence.*;
-import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "status_reservations")
@@ -51,5 +50,4 @@ public class StatusReservation {
     public void setReservations(List<Reservation> reservations) {
         this.reservations = reservations;
     }
-   
 }

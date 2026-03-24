@@ -26,10 +26,10 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 @EnableWebSecurity
 @EnableMethodSecurity
 public class SecurityConfig {
-    
+
     @Autowired
     private JwtUtils jwtUtils;
-    
+
     @Autowired
     AuthenticationConfiguration authenticationConfiguration;
 
@@ -45,13 +45,11 @@ public class SecurityConfig {
             .authorizeHttpRequests(http ->{
                 //endpoints publicos
                 http.requestMatchers(HttpMethod.POST, "/auth/hello").permitAll();
-                
                 http.anyRequest().denyAll();
             })
                 .addFilterBefore(new JwtTokenValidator(jwtUtils), BasicAuthenticationFilter.class)
             .build();
     }
-    
     @Bean
     public AuthenticationManager authenticationManager() throws Exception {
         return authenticationConfiguration.getAuthenticationManager();

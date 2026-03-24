@@ -16,7 +16,6 @@ public class StatusRoom {
     @Column(nullable = false)
     private String status;
     private String description;
-    
     @OneToMany(mappedBy = "statusRoom")
     private List<Room> rooms;
 

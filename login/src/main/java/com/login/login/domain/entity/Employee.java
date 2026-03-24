@@ -3,8 +3,13 @@ package com.login.login.domain.entity;
 import java.time.LocalDate;
 import java.util.List;
 
+<<<<<<< Updated upstream
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+=======
+import jakarta.persistence.*;
+
+>>>>>>> Stashed changes
 
 @Entity
 public class Employee extends User {

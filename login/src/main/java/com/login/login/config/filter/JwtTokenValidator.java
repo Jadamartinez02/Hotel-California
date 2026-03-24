@@ -40,7 +40,6 @@ public class JwtTokenValidator extends OncePerRequestFilter{
         if(jwtToken != null){
             //por que empieza con bearer
             jwtToken = jwtToken.substring(7);
-            
             DecodedJWT decodedJwt =jwtUtils.valudateToken(jwtToken);
             
             String username = jwtUtils.extractUsername(decodedJwt);

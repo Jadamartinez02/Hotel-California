@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="30341bc3-4a57-40a7-a6bb-062f15af2336" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/HotelcaliforniaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/dto/BedDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/dto/BedRoomDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/dto/BenefitDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/dto/BenefitPackageDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/dto/PackageDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/dto/ReservationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/dto/RoomDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/dto/StatusReservationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/dto/StatusRoomDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/payload/room/DeleteRoomPayload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/adapters/payload/room/GetRoomPayload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/controller/BedController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/controller/TempCont.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/Bed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/BedRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/Benefit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/BenefitPackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/HotelPackage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/Reservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/Season.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/StatusReservation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/entity/StatusRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/payload/room/DeleteRoomPayload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/domain/model/service/BedService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/infraestructure/TempInfra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/infraestructure/repository/IBeed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/infraestructure/repository/IRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/java/com/hotelcalifornia/hotelcalifornia/utils/messeg/Messege404.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotelcalifornia/src/test/java/com/hotelcalifornia/hotelcalifornia/HotelcaliforniaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/login/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/login/login/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/login/login/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/login/login/controller/TestAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/login/login/controller/TestAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/login/login/domain/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/login/login/domain/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/login/login/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/login/login/domain/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/login/login/domain/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/login/login/domain/service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/java/com/login/login/infraestructure/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/java/com/login/login/infraestructure/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/login/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="52" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="ms-17" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Ey9edLR6c4NOXFflHN8zzoBM2r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.1\\plugins\\Shell Script\\shellcheck.exe",
+    "Spring Boot.LoginApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30341bc3-4a57-40a7-a6bb-062f15af2336" name="Changes" comment="" />
+      <created>1781140039586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781140039586</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

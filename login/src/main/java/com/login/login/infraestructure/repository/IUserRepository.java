@@ -10,5 +10,6 @@ import com.login.login.domain.entity.User;
 
 @Repository
 public interface IUserRepository extends JpaRepository<User, String>{
-    Optional<User> findUserByEmail(String email);
+    Optional<User> findByEmail(String email);
+    Optional<User> findByDocument(String document);
 }

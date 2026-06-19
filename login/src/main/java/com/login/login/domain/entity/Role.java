@@ -1,38 +1,36 @@
 package com.login.login.domain.entity;
 
 import java.util.List;
-
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "roles")
+@Table(name = "role")
 public class Role {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(columnDefinition = "CHAR(36)")
+    @Column(name = "role_id", columnDefinition = "CHAR(36)")
     private String id;
 
-    @Column(nullable = false)
+    @Column(name = "role_name")
     private String name;
-    @Column(nullable = false)
+
+    @Column(name = "can_edit_rooms")
     private Boolean canEditRoom;
-    @Column(nullable = false)
+
+    @Column(name = "can_view_rooms")
     private Boolean canViewRoom;
-    @Column(nullable = false)
+
+    @Column(name = "can_post_offers")
     private Boolean canPostOffers;
-    @Column(nullable = false)
+
+    @Column(name = "can_edit_packages")
     private Boolean canEditPackage;
 
     @OneToMany(mappedBy = "role")
     private List<User> users;
 
     @ManyToMany
-    @JoinTable(
-        name = "role_permission",
-        joinColumns = @JoinColumn(name = "role_id"),
-        inverseJoinColumns = @JoinColumn(name = "permission_id")
-    )
+    @JoinTable(name = "role_permission", joinColumns = @JoinColumn(name = "role_id"), inverseJoinColumns = @JoinColumn(name = "permission_id"))
     private List<Permission> permissions;
 
     public Role() {

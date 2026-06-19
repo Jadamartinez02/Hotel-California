@@ -7,7 +7,6 @@ import jakarta.persistence.*;
 @Table(name = "permissions")
 public class Permission {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     @Column(columnDefinition = "CHAR(36)")
     private String id;
 

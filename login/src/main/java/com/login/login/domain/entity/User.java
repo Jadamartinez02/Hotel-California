@@ -3,11 +3,8 @@ package com.login.login.domain.entity;
 import java.time.LocalDate;
 import java.util.List;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -16,37 +13,39 @@ import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.Table;
 
-
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@Table(name = "app_user")
+@Table(name = "user_california")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(columnDefinition = "CHAR(36)")
+    @Column(name = "user_id", columnDefinition = "CHAR(36)")
     private String id;
 
-    @Column(nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
-    @Column(nullable = false)
+    @Column(name = "password", nullable = false)
     private String password;
-    @Column(nullable = false)
+    @Column(name = "first_name")
     private String firstName;
-    @Column(nullable = false)
+    @Column(name = "last_name")
     private String lastName;
+    @Column(name = "birth_date")
+    private LocalDate birthDate;
+    @Column(name = "phone_number")
+    private String phoneNumber;
     @Column(nullable = false)
     private String document;
-    private String phoneNumber;
-    private LocalDate birthDate;
 
     @OneToMany(mappedBy = "user")
     private List<Reservation> reservations;
     @ManyToOne
     @JoinColumn(name = "role_id", nullable = false)
     private Role role;
+
     public User() {
     }
+
     public User(String id, String email, String password, String firstName, String lastName,
             String document, String phoneNumber, LocalDate birthDate, List<Reservation> reservations, Role role) {
         this.id = id;
@@ -68,6 +67,7 @@ public class User {
     public void setId(String id) {
         this.id = id;
     }
+
     public String getEmail() {
         return email;
     }
